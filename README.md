@@ -1,61 +1,115 @@
-<a href="https://chat.vercel.ai/">
-  <img alt="Next.js 14 and App Router-ready AI chatbot." src="app/(chat)/opengraph-image.png">
-  <h1 align="center">Next.js AI Chatbot</h1>
+<a href="https://lexi-ai-one.vercel.app/">
+  <img alt="LexiAI: Advanced AI-Powered Legal Analysis Platform" src="app/(chat)/opengraph-image.png">
+  <h1 align="center">LexiAI</h1>
 </a>
 
 <p align="center">
-  An Open-Source AI Chatbot Template Built With Next.js and the AI SDK by Vercel.
+  An AI-powered legal document analysis platform that simplifies complex legal documents and provides intelligent insights.
 </p>
 
 <p align="center">
   <a href="#features"><strong>Features</strong></a> ·
-  <a href="#model-providers"><strong>Model Providers</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
-  <a href="#running-locally"><strong>Running locally</strong></a>
+  <a href="#ai-capabilities"><strong>AI Capabilities</strong></a> ·
+  <a href="#deploy-lexiai"><strong>Deploy LexiAI</strong></a> ·
+  <a href="#local-development"><strong>Local Development</strong></a>
 </p>
 <br/>
 
 ## Features
 
-- [Next.js](https://nextjs.org) App Router
-  - Advanced routing for seamless navigation and performance
-  - React Server Components (RSCs) and Server Actions for server-side rendering and increased performance
-- [AI SDK](https://sdk.vercel.ai/docs)
-  - Unified API for generating text, structured objects, and tool calls with LLMs
-  - Hooks for building dynamic chat and generative user interfaces
-  - Supports xAI (default), OpenAI, Fireworks, and other model providers
-- [shadcn/ui](https://ui.shadcn.com)
-  - Styling with [Tailwind CSS](https://tailwindcss.com)
-  - Component primitives from [Radix UI](https://radix-ui.com) for accessibility and flexibility
-- Data Persistence
-  - [Vercel Postgres powered by Neon](https://vercel.com/storage/postgres) for saving chat history and user data
-  - [Vercel Blob](https://vercel.com/storage/blob) for efficient file storage
-- [NextAuth.js](https://github.com/nextauthjs/next-auth)
-  - Simple and secure authentication
+- **Legal Document Analysis**
+  - Parse and analyze complex legal documents instantly
+  - Extract key terms, commitments, and potential risks
+  - Compare multiple contracts side-by-side with difference highlighting
+- **AI-Powered Legal Assistance**
+  - Get plain-language explanations of legal jargon
+  - Receive suggested modifications to contract language
+  - Identify missing clauses and potential legal vulnerabilities
+- **Document Management**
+  - Organize legal documents in customizable workspaces
+  - Track document versions and revisions
+  - Collaborate with team members on document review
+- **Interactive Chat Interface**
+  - Ask questions about your legal documents in natural language
+  - Receive contextual answers with citations to specific document sections
+  - Save important insights and export summaries
 
-## Model Providers
+## Technical Foundation
 
-This template ships with [xAI](https://x.ai) `grok-2-1212` as the default chat model. However, with the [AI SDK](https://sdk.vercel.ai/docs), you can switch LLM providers to [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Cohere](https://cohere.com/), and [many more](https://sdk.vercel.ai/providers/ai-sdk-providers) with just a few lines of code.
+- **Modern Web Architecture**
+  - [Next.js](https://nextjs.org) App Router for optimal performance and SEO
+  - React Server Components for reduced client-side JavaScript
+  - Server Actions for secure, server-side operations
+- **Advanced AI Integration**
+  - Custom-tuned legal language models
+  - [AI SDK](https://sdk.vercel.ai/docs) for unified API interactions with multiple LLMs
+  - Specialized legal prompt engineering for accurate document analysis
+- **Polished User Experience**
+  - Responsive design built with [Tailwind CSS](https://tailwindcss.com)
+  - Accessible UI components from [shadcn/ui](https://ui.shadcn.com)
+  - Intuitive document annotation and navigation
+- **Enterprise-Grade Infrastructure**
+  - [Vercel Postgres](https://vercel.com/storage/postgres) for reliable data persistence
+  - [Vercel Blob](https://vercel.com/storage/blob) for efficient document storage
+  - End-to-end encryption for sensitive legal documents
 
-## Deploy Your Own
+## AI Capabilities
 
-You can deploy your own version of the Next.js AI Chatbot to Vercel with one click:
+LexiAI combines multiple specialized AI models to deliver comprehensive legal analysis:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fai-chatbot&env=AUTH_SECRET&envDescription=Generate%20a%20random%20secret%20to%20use%20for%20authentication&envLink=https%3A%2F%2Fgenerate-secret.vercel.app%2F32&project-name=my-awesome-chatbot&repository-name=my-awesome-chatbot&demo-title=AI%20Chatbot&demo-description=An%20Open-Source%20AI%20Chatbot%20Template%20Built%20With%20Next.js%20and%20the%20AI%20SDK%20by%20Vercel&demo-url=https%3A%2F%2Fchat.vercel.ai&products=%5B%7B%22type%22%3A%22integration%22%2C%22protocol%22%3A%22ai%22%2C%22productSlug%22%3A%22grok%22%2C%22integrationSlug%22%3A%22xai%22%7D%2C%7B%22type%22%3A%22integration%22%2C%22protocol%22%3A%22ai%22%2C%22productSlug%22%3A%22api-key%22%2C%22integrationSlug%22%3A%22groq%22%7D%2C%7B%22type%22%3A%22integration%22%2C%22protocol%22%3A%22storage%22%2C%22productSlug%22%3A%22neon%22%2C%22integrationSlug%22%3A%22neon%22%7D%2C%7B%22type%22%3A%22blob%22%7D%5D)
+- **Document Processing**
+  - Semantic parsing of legal documents with structure recognition
+  - Table and form extraction with relational understanding
+  - Multi-language support for international legal documents
 
-## Running locally
+- **Legal Analysis**
+  - Jurisdiction-specific legal term recognition
+  - Obligation and liability extraction
+  - Compliance assessment against regulatory frameworks
 
-You will need to use the environment variables [defined in `.env.example`](.env.example) to run Next.js AI Chatbot. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/projects/environment-variables) for this, but a `.env` file is all that is necessary.
+- **Security & Privacy**
+  - All document processing happens server-side
+  - Data retention policies configurable by organization
+  - Privacy-preserving AI analysis with minimal data exposure
 
-> Note: You should not commit your `.env` file or it will expose secrets that will allow others to control access to your various AI and authentication provider accounts.
+## Deploy LexiAI
+
+You can deploy your own instance of LexiAI to Vercel with one click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flexiai%2Flexiai-platform&env=AUTH_SECRET,AI_API_KEY&envDescription=Secure%20keys%20for%20authentication%20and%20AI%20access&envLink=https%3A%2F%2Fdocs.lexiai.app%2Fdeployment%2Fenvironment-variables&project-name=lexiai-instance&repository-name=lexiai-platform&demo-title=LexiAI%20Platform&demo-description=AI-powered%20legal%20document%20analysis%20platform%20that%20simplifies%20complex%20legal%20documents&demo-url=https%3A%2F%2Flexiai.app&demo-image=https%3A%2F%2Flexiai.app%2Fimages%2Fsharing-image.png)
+
+## Local Development
+
+To run LexiAI locally, you'll need to configure the environment variables listed in `.env.example`. We recommend using Vercel's environment management:
 
 1. Install Vercel CLI: `npm i -g vercel`
-2. Link local instance with Vercel and GitHub accounts (creates `.vercel` directory): `vercel link`
-3. Download your environment variables: `vercel env pull`
+2. Link your local project: `vercel link`
+3. Pull environment variables: `vercel env pull`
+
+Then start the development server:
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-Your app template should now be running on [localhost:3000](http://localhost:3000/).
+Navigate to [localhost:3000](http://localhost:3000/) to see LexiAI running locally.
+
+## Enterprise Solutions
+
+LexiAI offers additional features for enterprise customers, including:
+
+- **Custom LLM Training** - Train models on your organization's legal corpus
+- **API Integration** - Connect with existing legal document management systems
+- **Advanced Compliance** - Specialized modules for GDPR, CCPA, and industry regulations
+- **White-labeling** - Deploy with your organization's branding
+
+Contact us at [enterprise@lexiai.app](mailto:enterprise@lexiai.app) to learn more.
+
+## Contributing
+
+We welcome contributions to LexiAI! See our [contributing guidelines](CONTRIBUTING.md) for more information on how to get involved.
+
+## License
+
+LexiAI is licensed under the [MIT License](LICENSE).
